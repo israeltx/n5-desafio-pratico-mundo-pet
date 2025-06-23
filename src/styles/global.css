@@ -91,3 +91,28 @@
 body {
   font-family: var(--inter-family);
 }
+
+
+
+/* LAYOUT */
+:root {
+  --s12: 0.75rem;
+  --s20: 1.25rem;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 390px;
+  margin: auto;
+  padding: var(--s44) var(--s36);
+}
+
+.desktop-only { display: none; }
+.mobile-only { display: initial; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-self: center;
+  text-align: center;
+  gap: var(--s36);
+}

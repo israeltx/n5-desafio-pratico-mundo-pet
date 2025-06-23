@@ -1,0 +1,16 @@
+button {
+  /* Reset styles */
+  appearance: none;
+  border: none;
+
+  padding: var(--s12) var(--s20);
+  border-radius: 8px;
+  background-color: var(--content-brand);
+  text-transform: uppercase;
+
+  transition: background-color 150ms;
+
+  &:hover {
+    background-color: var(--background-highlights);
+  }
+}
