@@ -1,7 +1,7 @@
 {
   "name": "Mundo Pet",
   "description": "Web app for schedules on a pet shop",
-  "author": "Israel Teixeira"
+  "author": "Israel Teixeira",
   "scripts": {
     "server": "json-server --watch server.json --port 2222"
   },
