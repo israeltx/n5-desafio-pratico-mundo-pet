@@ -27,3 +27,63 @@
   --accent-orange: #F09102;
   --accent-orange-light: #75501B;
 }
+
+/* TYPOGRAPHY */
+:root {
+    /* Font Family */
+  --inter-tight-family: "Inter Tight", sans-serif;
+  --inter-family: "Inter", sans-serif;
+
+  /* Font Sizes */
+  --fs-24: 1.5rem;
+  --fs-16: 1rem;
+  --fs-14: 0.875rem;
+  --fs-12: 0.75rem;
+
+  /* Font Weights */
+  --fw-normal: 400; 
+  --fw-medium: 500; 
+  --fw-bold: 700; 
+
+  /* Line Heights */
+  --flh-32: 32px;
+  --flh-24: 24px;
+  --flh-16: 16px;
+  
+  /* Font Combinations */
+  .title {
+    font: var(--fw-bold) var(--fs-24)/var(--flh-32) var(--inter-tight-family);
+  }
+
+  /* Font Family */
+  .paragraph-medium, .paragraph-small, .label-large, .label-medium, .label-small, .link {
+    font-family: var(--inter-family);
+  }
+
+  /* Font Weight */
+  .paragraph-medium, .paragraph-small, .link {
+    font-weight: var(--fw-medium);
+  }
+  .label-large, .label-medium, .label-small {
+    font-weight: var(--fw-bold);
+  }
+
+  /* Font Size */
+  .label-large {
+    font-size: var(--fs-16);
+  }
+  .paragraph-medium, .label-medium {
+    font-size: var(--fs-14);
+  }
+  .paragraph-small, .label-small, .link {
+    font-size: var(--fs-12);
+  }
+
+  /* Line Height */
+  .paragraph-medium, .label-large, .label-medium {
+    line-height: var(--flh-24);
+  }
+  .paragraph-small, .label-small, .link {
+    line-height: var(--flh-16);
+  } 
+}
