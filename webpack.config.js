@@ -19,5 +19,13 @@ module.exports = {
   },
   plugins: [new HtmlWebPackPlugin({
     template: path.resolve(__dirname, 'index.html')
-  })]
+  })],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      }
+    ]
+  }
 }
