@@ -1,0 +1,10 @@
+a {
+  color: var(--content-tertiary);
+  
+  transition: color 200ms;
+
+  &:hover {
+    color: var(--content-primary);
+    text-decoration: underline;
+  }
+}

@@ -28,6 +28,10 @@
   --accent-orange-light: #75501B;
 }
 
+body {
+  background-color: var(--background-tertiary);
+}
+
 /* TYPOGRAPHY */
 :root {
     /* Font Family */

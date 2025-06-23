@@ -3,6 +3,8 @@ button {
   appearance: none;
   border: none;
 
+  cursor: pointer;
+
   padding: var(--s12) var(--s20);
   border-radius: 8px;
   background-color: var(--content-brand);
