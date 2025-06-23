@@ -1,0 +1,27 @@
+input, textarea {
+  /* Reset */
+  outline: none;
+
+  /* General Styles */
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+  background-color: transparent;
+
+  color: var(--content-primary);
+
+  padding: var(--s12);
+
+  transition: border 200ms;
+
+  &:hover {
+    border: 1px solid var(--border-secondary);
+  }
+
+  &:focus {
+    border: 1px solid var(--border-brand);
+  }
+
+  &::placeholder {
+    color: var(--content-secondary);
+  }
+}
