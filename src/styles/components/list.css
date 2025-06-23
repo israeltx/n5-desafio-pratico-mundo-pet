@@ -1,0 +1,17 @@
+ul {
+  width: 680px;
+  padding: var(--s16) var(--s12);
+  border-bottom: 1px solid var(--border-divisor);
+
+  & li {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.scheduled-time {
+  flex-grow: 1;
+}
+.pet-owner, .service-description {
+  color: var(--content-secondary);
+  flex-grow: 2;
+}
