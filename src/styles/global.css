@@ -87,3 +87,7 @@
     line-height: var(--flh-16);
   } 
 }
+
+body {
+  font-family: var(--inter-family);
+}
