@@ -30,6 +30,7 @@
 
 body {
   background-color: var(--background-tertiary);
+  color: var(--content-primary);
 }
 
 /* TYPOGRAPHY */
