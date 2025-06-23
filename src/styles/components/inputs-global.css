@@ -25,3 +25,8 @@ input, textarea, select {
     color: var(--content-secondary);
   }
 }
+
+select::picker-icon {
+  border: 1px solid yellow;
+  background-color: yellow;
+}

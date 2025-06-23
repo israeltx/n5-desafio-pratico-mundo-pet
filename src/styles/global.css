@@ -103,6 +103,7 @@ body {
 :root {
   --s12: 0.75rem;
   --s20: 1.25rem;
+  --s40: 2.5rem;
 }
 
 /* Utility Classes */

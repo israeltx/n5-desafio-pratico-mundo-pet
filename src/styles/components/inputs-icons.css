@@ -1,0 +1,25 @@
+.icon {
+  padding-left: var(--s40);
+  background-size: var(--s20);
+}
+
+.icon-user {
+  background: url(../../assets/user.svg) no-repeat left;
+  background-position: var(--s12);
+}
+.icon-paw {
+  background: url(../../assets/paw.svg) no-repeat left;
+  background-position: var(--s12);
+}
+.icon-phone {
+  background: url(../../assets/phone.svg) no-repeat left;
+  background-position: var(--s12);
+}
+.icon-calendar {
+  background: url(../../assets/calendar.svg) no-repeat left;
+  background-position: var(--s12);
+}
+.icon-clock {
+  background: url(../../assets/clock.svg) no-repeat left;
+  background-position: var(--s12);
+}
