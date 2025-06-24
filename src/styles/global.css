@@ -60,37 +60,26 @@ body {
     font: var(--fw-bold) var(--fs-24)/var(--flh-32) var(--inter-tight-family);
   }
 
-  /* Font Family */
-  .paragraph-medium, .paragraph-small, .label-large, .label-medium, .label-small, .link {
-    font-family: var(--inter-family);
+  .paragraph-medium {
+    font: var(--fw-medium) var(--fs-14)/var(--flh-24) var(--inter-family);
+  }
+  .paragraph-small {
+    font: var(--fw-medium) var(--fs-12)/var(--flh-16) var(--inter-family);
   }
 
-  /* Font Weight */
-  .paragraph-medium, .paragraph-small, .link {
-    font-weight: var(--fw-medium);
-  }
-  .label-large, .label-medium, .label-small {
-    font-weight: var(--fw-bold);
-  }
-
-  /* Font Size */
   .label-large {
-    font-size: var(--fs-16);
+    font: var(--fw-bold) var(--fs-16)/var(--flh-24) var(--inter-family);
   }
-  .paragraph-medium, .label-medium {
-    font-size: var(--fs-14);
+  .label-medium {
+    font: var(--fw-bold) var(--fs-14)/var(--flh-24) var(--inter-family);
   }
-  .paragraph-small, .label-small, .link {
-    font-size: var(--fs-12);
+  .label-small {
+    font: var(--fw-bold) var(--fs-12)/var(--flh-16) var(--inter-family);
   }
 
-  /* Line Height */
-  .paragraph-medium, .label-large, .label-medium {
-    line-height: var(--flh-24);
+  .link {
+    font: var(--fw-medium) var(--fs-12)/var(--flh-16) var(--inter-family);
   }
-  .paragraph-small, .label-small, .link {
-    line-height: var(--flh-16);
-  } 
 }
 
 body {
