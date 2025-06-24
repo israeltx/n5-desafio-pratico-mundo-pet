@@ -7,3 +7,14 @@ header {
     margin-bottom: var(--s32);
   }
 }
+
+#lists {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s12);
+  & .time-period-container {
+    padding: var(--s14) var(--s20);
+    background-color: var(--background-tertiary);
+    border-radius: 10px;
+  }
+}
