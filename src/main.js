@@ -8,7 +8,6 @@ import './libs/dayjs.js'
 import './styles/reset.css'
 import './styles/global.css'
 import './styles/schedule.css'
-import './styles/footer.css'
 // CSS Components
 import './styles/components/buttons.css'
 import './styles/components/links.css'
