@@ -1,0 +1,13 @@
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 153px;
+  height: 48px;
+
+  background-color: var(--background-tertiary);
+
+  margin-bottom: var(--s20);
+  border-radius: 0 0 10px;
+}
