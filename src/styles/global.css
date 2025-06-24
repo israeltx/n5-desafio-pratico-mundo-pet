@@ -98,6 +98,7 @@ body {
   --s20: 1.25rem;
   --s32: 2rem;
   --s40: 2.5rem;
+  --s80: 5rem;
 }
 
 /* Utility Classes */
@@ -109,10 +110,13 @@ body {
 
 .desktop-only { display: none; }
 .mobile-only { display: initial; }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  justify-self: center;
-  text-align: center;
-  gap: var(--s36);
+
+
+/* Media Queries */
+@media (width > 390px) {
+  .container {
+    max-width: 871px;
+    margin: auto;
+    padding: 0 var(--s80);
+  }
 }
