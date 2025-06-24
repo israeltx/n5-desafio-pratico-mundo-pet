@@ -3,9 +3,13 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 1px solid var(--border-divisor);
     padding-bottom: var(--s12);
     margin-top: var(--s32);
+
+    /* Apply a border-bottom to all lis but the last one */
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--border-divisor);      
+    }
   }
 }
 .scheduled-time {
