@@ -102,7 +102,7 @@ body {
 .container {
   max-width: 390px;
   margin: auto;
-  padding: var(--s44) var(--s36);
+  padding: 0 var(--s20);
 }
 
 .desktop-only { display: none; }
