@@ -1,0 +1,9 @@
+header {
+  & .title > p {
+    color: var(--content-secondary);
+    margin-bottom: var(--s12);
+  }
+  & select {
+    margin-bottom: var(--s32);
+  }
+}
