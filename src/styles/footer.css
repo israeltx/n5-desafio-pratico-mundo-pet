@@ -6,3 +6,18 @@ footer {
 
   background-color: var(--background-tertiary);
 }
+
+
+/* Media Queries */
+@media (width > 390px) {
+  footer {
+    position: relative;
+    background-color: initial;
+
+    & button {
+      right: 605px;
+      bottom: 10px;
+      position: absolute;
+    }
+  }
+}
