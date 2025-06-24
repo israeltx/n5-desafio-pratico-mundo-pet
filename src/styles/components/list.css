@@ -23,3 +23,12 @@ ul {
   text-align: right;
 }
 
+/* Media Queries */
+@media (width > 390px) {
+  .service-description, .btn-remove {
+    flex-basis: auto;
+  }
+  .btn-remove {
+    align-content: center;
+  }
+}
