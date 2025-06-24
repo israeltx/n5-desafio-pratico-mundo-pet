@@ -12,9 +12,29 @@ header {
   display: flex;
   flex-direction: column;
   gap: var(--s12);
+
   & .time-period-container {
     padding: var(--s14) var(--s20);
     background-color: var(--background-tertiary);
     border-radius: 10px;
+
+    & .list-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-divisor);
+      padding-bottom: var(--s12);
+
+      & .header-icon-title {
+        display: flex;
+        align-items: center;
+        gap: var(--s12);
+      }
+
+      /* Time Period */
+      & span {
+        color: var(--content-secondary);
+      }
+    }
   }
 }
