@@ -7,7 +7,7 @@
   --content-brand: #9282FA;
 
   /* Background */
-  --background-primary: #151515;
+  --background-primary: #14151D;
   --background-secondary: #1E1E1E;
   --background-tertiary: #23242C;
   --background-brand: #9282FA;
@@ -29,7 +29,7 @@
 }
 
 body {
-  background-color: var(--background-tertiary);
+  background-color: var(--background-primary);
   color: var(--content-primary);
 }
 
