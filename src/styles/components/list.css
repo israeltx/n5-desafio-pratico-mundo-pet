@@ -9,9 +9,17 @@ ul {
   }
 }
 .scheduled-time {
+  /* flex-grow: 1; */
+  margin-right: var(--s12);
+}
+.pet-owner-name, .service-description {
+  color: var(--content-secondary);
   flex-grow: 1;
 }
-.pet-owner, .service-description {
-  color: var(--content-secondary);
-  flex-grow: 2;
+.service-description, .btn-remove {
+  flex-basis: 100%;
 }
+.btn-remove {
+  text-align: right;
+}
+
