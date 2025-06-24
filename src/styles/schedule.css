@@ -40,3 +40,16 @@ header {
   }
   /* End of Time Period Headers */
 }
+
+
+/* Media Queries */
+@media (width > 390px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+
+    & select {
+      margin-top: var(--s6);
+    }
+  }
+}
