@@ -1,15 +1,16 @@
 ul {
   padding: var(--s16) var(--s12);
-  border-bottom: 1px solid var(--border-divisor);
-
+  
   & li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom: 1px solid var(--border-divisor);
+    padding-bottom: var(--s12);
+    margin-bottom: var(--s32);
   }
 }
 .scheduled-time {
-  /* flex-grow: 1; */
   margin-right: var(--s12);
 }
 .pet-owner-name, .service-description {
