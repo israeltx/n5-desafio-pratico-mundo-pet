@@ -20,6 +20,7 @@ ul {
 }
 .btn-remove {
   text-align: right;
+  margin-top: var(--s8);
 }
 
 /* Media Queries */
