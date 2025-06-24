@@ -13,6 +13,7 @@ header {
   flex-direction: column;
   gap: var(--s12);
 
+  /* Time Period Headers */
   & .time-period-container {
     padding: var(--s14) var(--s20);
     background-color: var(--background-tertiary);
@@ -37,4 +38,5 @@ header {
       }
     }
   }
+  /* End of Time Period Headers */
 }
