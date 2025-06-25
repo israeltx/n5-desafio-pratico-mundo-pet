@@ -8,19 +8,26 @@
   /* Header Style */
   & header {
     position: relative;
-    margin-bottom: var(--s32);
-
+    
     & #close-btn {
       position: absolute;
       
       top: -22px;
       right: 0;
-
+      
       cursor: pointer;
     }
+    
+    & .title {
+      margin-bottom: var(--s32);
 
-    & p {
-      color: var(--content-secondary);
+      & h1 {
+        margin-bottom: 0;
+      }
+
+      & p {
+        color: var(--content-secondary);
+      }
     }
   }
 
@@ -39,7 +46,20 @@
     display: block;
     margin-top: var(--s20);
     margin-left: auto;
-    
+  }
+}
+
+
+/* Media Queries */
+@media (width > 390px) {
+  #form {
+    max-width: 477px;
+    padding: var(--s40);
   }
 
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--s16);
+  }
 }

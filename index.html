@@ -119,8 +119,10 @@
   <div id="form">
     <header>
       <img src="./src/assets/x.svg" id="close-btn" alt="Botão para fechar">
-      <h1 class="title">Agende um atendimento</h1>
-      <p class="paragraph-medium">Preencha os dados do cliente para realizar o agendamento:</p>
+      <div class="title">
+        <h1 class="title">Agende um atendimento</h1>
+        <p class="paragraph-medium">Preencha os dados do cliente para realizar o agendamento:</p>
+      </div>
     </header>
     <form action="">
       <!-- Owner' Name -->
@@ -135,16 +137,24 @@
       <!-- Service Description -->
        <label for="service-description" class="label-medium">Descrição do serviço</label>
        <textarea name="service-description" id="service-description" placeholder="Banho e tosa"></textarea>
-      <!-- Date -->
-      <label for="date" class="label-medium">Data</label>
-      <select name="date" id="date" class="icon icon-calendar">
-        <option value="">XX/XX/2025</option>
-      </select>
-      <!-- Hour -->
-      <label for="hour" class="label-medium">Hora</label>
-      <select name="hour" id="hour" class="icon icon-clock">
-        <option value="">12:00</option>
-      </select>
+
+      <div class="grid">
+        <!-- Date -->
+        <div class="input-wrapper">
+          <label for="date" class="label-medium">Data</label>
+          <select name="date" id="date" class="icon icon-calendar">
+            <option value="">XX/XX/2025</option>
+          </select>          
+        </div>
+        <!-- Hour -->
+        <div class="input-wrapper">
+          <label for="hour" class="label-medium">Hora</label>
+          <select name="hour" id="hour" class="icon icon-clock">
+            <option value="">12:00</option>
+          </select>        
+        </div>
+      </div>
+
       <!-- Subimit Button -->
       <button type="submit" class="label-large">Agendar</button>
     </form>
