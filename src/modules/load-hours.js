@@ -1,5 +1,4 @@
 import dayjs from 'dayjs'
-
 // Import all the hours available
 import {available_hours} from '../utils/available-hours.js'
 
@@ -9,6 +8,7 @@ const select = document.getElementById('hours')
 const hour = document.getElementById('hour')
 // Get actual hour
 const actualHour = dayjs(new Date()).format('H')
+
 
 
 let unavailableHours = []
@@ -27,7 +27,7 @@ available_hours.forEach((hour) => {
 schedule_hours.forEach((hour) => {
   // Create the option
   const option = document.createElement('option')
-  // Set the option's value to an hour
+  // Set the option's innerHTML to an hour
   option.innerHTML = hour
   // Append option to the select element
   select.appendChild(option)
