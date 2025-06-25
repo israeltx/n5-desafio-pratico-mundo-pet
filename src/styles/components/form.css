@@ -1,9 +1,10 @@
 dialog {
   max-width: 350px;
-  margin: 0 auto var(--s20);
+  margin: auto;
   padding: var(--s40) var(--s20);
   background-color: var(--background-tertiary);
   border-radius: 12px;
+  border: none;
 
   /* Header Style */
   & header {
