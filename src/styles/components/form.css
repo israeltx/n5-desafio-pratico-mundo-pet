@@ -49,10 +49,14 @@ dialog {
     margin-left: auto;
   }
   & ::-webkit-calendar-picker-indicator {
-  cursor: pointer;
-  background: url("../../assets/down-arrow.svg") no-repeat;
+    cursor: pointer;
+    background: url("../../assets/down-arrow.svg") no-repeat;
+  }
+  & #hours {
+    background-color: var(--background-tertiary);
+  }
 }
-}
+
 
 
 /* Media Queries */
