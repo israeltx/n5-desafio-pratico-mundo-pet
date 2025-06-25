@@ -12,12 +12,157 @@
   <title>Mundo Pet</title>
 <script defer src="main.js"></script></head>
 <body>
-  <h1>Mundo Pet</h1>
-  <button class="label-large">Agendar</button><br>
-  <a href="" class="paragraph-small">Remover agendamento</a><br>
-  <label for="" class="label-medium">Nome do tutor</label><br>
-  <textarea name="" id="" placeholder="Heleninha"></textarea><br>
-  <input type="text" name="" id="" placeholder="Heleninha" class="icon-user"><br>
-  <select name="" id=""></select>
+
+  <header id="logo">
+    <img src="./src/assets/logo.svg" alt="Mundo Pet logo">
+  </header>
+  
+  <div id="blur">
+    <main class="container">
+      <section id="schedule">
+        <header>
+          <div class="title">
+            <h1 class="title">Sua agenda</h1>
+            <p class="paragraph-medium">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>          
+          </div>
+          <select name="" id="" class="icon icon-calendar">
+            <option value="">24/06/25</option>
+          </select>
+        </header>
+
+        <div id="lists">
+          <!-- Morning Schedule -->
+          <div id="morning" class="time-period-container">
+            <header class="list-header">
+              <div class="header-icon-title">
+                <img src="./src/assets/sun.svg" alt="">
+                <h2 class="label-large">Manhã</h2>
+              </div>
+              <span class="label-large">09h-12h</span>
+            </header>
+
+            <ul>
+              <li>
+                <label for="" class="label-medium scheduled-time">13:00</label>
+                <label for="" class="label-medium">Rex &nbsp</label>
+                <p class="paragraph-medium pet-owner-name"> / Mariana Lima</p>
+                <p class="paragraph-medium service-description">Higienização dos ouvidos</p>
+                <a href="" class="paragraph-small btn-remove">Remover agendamento</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Afternoon Schedule -->
+          <div id="afternoon" class="time-period-container">
+            <header class="list-header">
+              <div class="header-icon-title">
+                <img src="./src/assets/sun-cloud.svg" alt="">
+                <h2 class="label-large">Tarde</h2>
+              </div>
+              <span class="label-large">13h-18h</span>
+            </header>
+
+            <ul>
+              <li>
+                <label for="" class="label-medium scheduled-time">13:00</label>
+                <label for="" class="label-medium">Rex &nbsp</label>
+                <p class="paragraph-medium pet-owner-name"> / Mariana Lima</p>
+                <p class="paragraph-medium service-description">Higienização dos ouvidos</p>
+                <a href="" class="paragraph-small btn-remove">Remover agendamento</a>
+              </li>
+              <li>
+                <label for="" class="label-medium scheduled-time">13:00</label>
+                <label for="" class="label-medium">Rex &nbsp</label>
+                <p class="paragraph-medium pet-owner-name"> / Mariana Lima</p>
+                <p class="paragraph-medium service-description">Higienização dos ouvidos</p>
+                <a href="" class="paragraph-small btn-remove">Remover agendamento</a>
+              </li>
+              <li>
+                <label for="" class="label-medium scheduled-time">13:00</label>
+                <label for="" class="label-medium">Rex &nbsp</label>
+                <p class="paragraph-medium pet-owner-name"> / Mariana Lima</p>
+                <p class="paragraph-medium service-description">Higienização dos ouvidos</p>
+                <a href="" class="paragraph-small btn-remove">Remover agendamento</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Evening Schedule -->
+          <div id="evening" class="time-period-container">
+            <header class="list-header">
+              <div class="header-icon-title">
+                <img src="./src/assets/moon.svg" alt="">
+                <h2 class="label-large">Noite</h2>
+              </div>
+              <span class="label-large">19h-21h</span>
+            </header>
+
+            <ul>
+              <li>
+                <label for="" class="label-medium scheduled-time">13:00</label>
+                <label for="" class="label-medium">Rex &nbsp</label>
+                <p class="paragraph-medium pet-owner-name"> / Mariana Lima</p>
+                <p class="paragraph-medium service-description">Higienização dos ouvidos</p>
+                <a href="" class="paragraph-small btn-remove">Remover agendamento</a>
+              </li>
+            </ul>
+          </div>
+        <!-- End of #lists  -->
+
+        </div>
+      </section>
+    </main>
+  
+    <footer>
+      <button class="label-large" id="new-appointment">Novo Agendamento</button><br>
+    </footer>
+  
+  <!-- End of blur div -->
+  </div>
+
+  <dialog id="form">
+    <header>
+      <img src="./src/assets/x.svg" id="close-btn" alt="Botão para fechar">
+      <div class="title-info">
+        <h1 class="title">Agende um atendimento</h1>
+        <p class="paragraph-medium">Preencha os dados do cliente para realizar o agendamento:</p>
+      </div>
+    </header>
+    <form action="">
+      <!-- Owner' Name -->
+      <label for="tutor-name" class="label-medium">Nome do tutor</label>
+      <input type="text" name="tutor-name" id="tutor-name" class="icon icon-user" placeholder="Helena">
+      <!-- Pet's Name -->
+      <label for="pets-name" class="label-medium">Nome do pet</label>
+      <input type="text" name="pets-name" id="pets-name" class="icon icon-paw" placeholder="Dorothy">
+      <!-- Phone Number -->
+      <label for="phone-number" class="label-medium">Telefone</label>
+      <input type="text" name="phone-number" id="phone-number" class="icon icon-phone" placeholder="(00) 0 0000-0000">
+      <!-- Service Description -->
+       <label for="service-description" class="label-medium">Descrição do serviço</label>
+       <textarea name="service-description" id="service-description" placeholder="Banho e tosa"></textarea>
+
+      <div class="grid">
+        <!-- Date -->
+        <div class="input-wrapper">
+          <label for="date" class="label-medium">Data</label>
+          <select name="date" id="date" class="icon icon-calendar">
+            <option value="">XX/XX/2025</option>
+          </select>          
+        </div>
+        <!-- Hour -->
+        <div class="input-wrapper">
+          <label for="hour" class="label-medium">Hora</label>
+          <select name="hour" id="hour" class="icon icon-clock">
+            <option value="">12:00</option>
+          </select>        
+        </div>
+      </div>
+
+      <!-- Subimit Button -->
+      <button type="submit" class="label-large">Agendar</button>
+    </form>
+  </dialog>
+
 </body>
 </html>
