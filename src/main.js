@@ -21,4 +21,5 @@ import './styles/components/logo.css'
 import './styles/components/form.css'
 
 // JS
-import './modal-form.js'
+import './modules/modal-form.js'
+import './modules/submit.js'
