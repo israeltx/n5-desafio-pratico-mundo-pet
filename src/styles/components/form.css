@@ -1,4 +1,4 @@
-#form {
+dialog {
   max-width: 350px;
   margin: 0 auto var(--s20);
   padding: var(--s40) var(--s20);
@@ -18,7 +18,7 @@
       cursor: pointer;
     }
     
-    & .title {
+    & .title-info {
       margin-bottom: var(--s32);
 
       & h1 {

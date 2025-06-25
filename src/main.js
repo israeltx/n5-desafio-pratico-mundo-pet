@@ -19,3 +19,6 @@ import './styles/components/inputs-icons.css'
 import './styles/components/list.css'
 import './styles/components/logo.css'
 import './styles/components/form.css'
+
+// JS
+import './modal-form.js'

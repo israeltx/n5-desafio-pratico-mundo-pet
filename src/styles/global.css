@@ -33,6 +33,10 @@ body {
   color: var(--content-primary);
 }
 
+h1 {
+  color: var(--content-primary);
+}
+
 /* TYPOGRAPHY */
 :root {
     /* Font Family */
