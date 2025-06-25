@@ -28,7 +28,7 @@
     display: block;
     margin-bottom: var(--s4);
   }
-  & input, textarea {
+  & input, textarea, select {
     width: 100%;
     margin-bottom: var(--s18);
   }

@@ -137,10 +137,14 @@
        <textarea name="service-description" id="service-description" placeholder="Banho e tosa"></textarea>
       <!-- Date -->
       <label for="date" class="label-medium">Data</label>
-      <input type="text" name="date" id="date" class="icon icon-calendar" placeholder="XX/XX/2025">       
+      <select name="date" id="date" class="icon icon-calendar">
+        <option value="">XX/XX/2025</option>
+      </select>
       <!-- Hour -->
       <label for="hour" class="label-medium">Hora</label>
-      <input type="text" name="hour" id="hour" class="icon icon-clock" placeholder="12:00">       
+      <select name="hour" id="hour" class="icon icon-clock">
+        <option value="">12:00</option>
+      </select>
       <!-- Subimit Button -->
       <button type="submit" class="label-large">Agendar</button>
     </form>
