@@ -90,6 +90,7 @@ body {
 
 /* LAYOUT */
 :root {
+  --s4: 0.25rem;
   --s6: 0.375rem;
   --s8: 0.5rem;
   --s12: 0.75rem;

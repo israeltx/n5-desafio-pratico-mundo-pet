@@ -1,0 +1,45 @@
+#form {
+  max-width: 350px;
+  margin: 0 auto var(--s20);
+  padding: var(--s40) var(--s20);
+  background-color: var(--background-tertiary);
+  border-radius: 12px;
+
+  /* Header Style */
+  & header {
+    position: relative;
+    margin-bottom: var(--s32);
+
+    & #close-btn {
+      position: absolute;
+      
+      top: -22px;
+      right: 0;
+
+      cursor: pointer;
+    }
+
+    & p {
+      color: var(--content-secondary);
+    }
+  }
+
+  & label {
+    display: block;
+    margin-bottom: var(--s4);
+  }
+  & input, textarea {
+    width: 100%;
+    margin-bottom: var(--s18);
+  }
+  & textarea {
+    height: 83px;
+  }
+  & button {
+    display: block;
+    margin-top: var(--s20);
+    margin-left: auto;
+    
+  }
+
+}
