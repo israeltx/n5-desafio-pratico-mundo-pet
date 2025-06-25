@@ -9,7 +9,6 @@ const modal_form = document.querySelector('dialog')
 // Close (X) button
 const btn_close = document.getElementById('close-btn')
 
-console.log(btn_close);
 // Add open modal behaviour to the "Agendar" button
 new_appointment.addEventListener('click', () => {
   // Remove scroll from body
