@@ -116,5 +116,35 @@
     <button class="label-large">Novo Agendamento</button><br>
   </footer>
 
+  <div>
+    <header>
+      <img src="./src/assets/x.svg" alt="Botão para fechar">
+      <h1 class="title">Agende um atendimento</h1>
+      <p class="paragraph-medium">Preencha os dados do cliente para realizar o agendamento:</p>
+    </header>
+    <form action="">
+      <!-- Owner' Name -->
+      <label for="tutor-name" class="label-medium">Nome do tutor</label>
+      <input type="text" name="tutor-name" id="tutor-name" class="icon icon-user" placeholder="Marisa Televisan">
+      <!-- Pet's Name -->
+      <label for="pets-name" class="label-medium">Nome do pet</label>
+      <input type="text" name="pets-name" id="pets-name" class="icon icon-paw" placeholder="Dorothy">
+      <!-- Phone Number -->
+      <label for="phone-number" class="label-medium">Telefone</label>
+      <input type="text" name="phone-number" id="phone-number" class="icon icon-phone" placeholder="(00) 0 0000-0000">
+      <!-- Service Description -->
+       <label for="service-description" class="label-medium">Descrição do serviço</label>
+       <textarea name="service-description" id="service-description" placeholder="Banho e tosa"></textarea>
+      <!-- Date -->
+      <label for="date" class="label-medium">Data</label>
+      <input type="text" name="date" id="date" class="icon icon-calendar" placeholder="XX/XX/2025">       
+      <!-- Hour -->
+      <label for="hour" class="label-medium">Hora</label>
+      <input type="text" name="hour" id="hour" class="icon icon-clock" placeholder="12:00">       
+      <!-- Subimit Button -->
+      <button type="submit" class="label-large">Agendar</button>
+    </form>
+  </div>
+
 </body>
 </html>
