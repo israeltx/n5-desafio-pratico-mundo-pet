@@ -35,10 +35,13 @@ form.addEventListener('submit', (event) => {
     if (!name) {
       alert('Por favor, insira o nome do tutor')
     }
-// console.log(name, pets_name.value, phone_number.value, service_description.value, date.value, selected_hour);
 
+    const id = new Date().getTime()
+    console.log(id);
+    
   } catch (error) {
     alert('Não foi possível realizar o agendamento')
     console.log(error);
   }
 })
+// console.log(name, pets_name.value, phone_number.value, service_description.value, date.value, selected_hour);
