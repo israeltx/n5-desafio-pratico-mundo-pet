@@ -1,0 +1,8 @@
+input[type='date'] {
+  max-height: 48px;
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  background: url("../../assets/down-arrow.svg") no-repeat;
+}
