@@ -5,6 +5,7 @@
 
 // Dayjs library to deal with calendars
 import dayjs from "dayjs"
+import { newAppointment } from "../services/new-appointment.js"
 
 // Form
 const form = document.querySelector('form')
@@ -31,19 +32,30 @@ form.addEventListener('submit', (event) => {
   event.preventDefault()
 
   try {
-    // Capture name and erase empty spaces
+    // Capture inputs and remove empthy spaces
     const name = tutors_name.value.trim()
-
-    // Capture the date selected
-
-    // Capture the hour selected
-    
+    const pet_name = pets_name.value.trim()
+    const phone = phone_number.value.trim()
+    const service = service_description.value.trim()
+    const appointment_date = date.value
+    const appointment_hour = hours.value
+  
     // If there's no name, don't continue
     if (!name) {
       alert('Por favor, insira o nome do tutor')
     }
 
     const id = new Date().getTime()
+
+    newAppointment({
+      id, 
+      name, 
+      pet_name, 
+      phone, 
+      service, 
+      appointment_date, 
+      appointment_hour
+    })
     
   } catch (error) {
     alert('Não foi possível realizar o agendamento')
