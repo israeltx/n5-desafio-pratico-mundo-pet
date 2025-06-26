@@ -22,7 +22,7 @@ import './styles/components/logo.css'
 import './styles/components/form.css'
 
 // JS
-import './modules/modal-form.js'
+import './modules/list.js'
 import './modules/submit.js'
 import './modules/load-calendar.js'
 import './modules/load-hours.js'

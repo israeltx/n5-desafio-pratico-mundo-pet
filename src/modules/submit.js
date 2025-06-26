@@ -1,3 +1,8 @@
+// List renders API > Add button functionality
+// Form captures the inputs and generates id > Register on the API
+  // Inputs date and hours and treated apart, returning their values
+
+
 // Dayjs library to deal with calendars
 import dayjs from "dayjs"
 
@@ -28,8 +33,10 @@ form.addEventListener('submit', (event) => {
   try {
     // Capture name and erase empty spaces
     const name = tutors_name.value.trim()
+
+    // Capture the date selected
+
     // Capture the hour selected
-    const selected_hour = hours.value
     
     // If there's no name, don't continue
     if (!name) {
@@ -37,7 +44,6 @@ form.addEventListener('submit', (event) => {
     }
 
     const id = new Date().getTime()
-    console.log(id);
     
   } catch (error) {
     alert('Não foi possível realizar o agendamento')

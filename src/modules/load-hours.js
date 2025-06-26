@@ -4,33 +4,49 @@ import {available_hours} from '../utils/available-hours.js'
 
 // Select element
 const select = document.getElementById('hours')
-// Hours input
-const hour = document.getElementById('hour')
+// Get selected date
+const date_input = document.getElementById('date')
+// Get actual date
+const actual_date = dayjs(new Date()).format('YYYY-MM-DD')
 // Get actual hour
-const actualHour = dayjs(new Date()).format('H')
+const actual_hour = dayjs(new Date()).format('H')
 
+// First render of hours on load
+renderHours(checkAvailableHours(date_input.value))
 
+// Listen to date input to render the hours accordingly
+date_input.addEventListener('change', () => { 
+  renderHours(checkAvailableHours(date_input.value))
+})
 
-let unavailableHours = []
-let schedule_hours = []
-
-// Check hour availability
-available_hours.forEach((hour) => {
-  if (hour < actualHour) {
-    unavailableHours.push(hour)
+function checkAvailableHours(date) {
+  let schedule_hours = []
+  
+  if (date > actual_date) {
+    available_hours.forEach((hour) => {
+      schedule_hours.push(hour)
+  })
   } else {
-    schedule_hours.push(hour)
+    available_hours.forEach((hour) => {
+      if (hour >= actual_hour) {
+        schedule_hours.push(hour)
+      }
+    })
   }
-})
+  return schedule_hours
+}
 
-// Render available hours as options inside select
-schedule_hours.forEach((hour) => {
-  // Create the option
-  const option = document.createElement('option')
-  // Set the option's innerHTML to an hour
-  option.innerHTML = hour
-  option.value = hour
-  // Append option to the select element
-  select.appendChild(option)
-})
-
+function renderHours(hours) { 
+  // Clear previous list
+  select.innerHTML = ''
+  // Render available hours as options inside select
+  hours.forEach((hour) => {
+    // Create the option
+    const option = document.createElement('option')
+    // Set the option's innerHTML to an hour
+    option.innerHTML = hour
+    option.value = hour
+    // Append option to the select element
+    select.appendChild(option)
+  })
+}
