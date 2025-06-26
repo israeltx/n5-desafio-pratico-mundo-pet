@@ -29,6 +29,8 @@ schedule_hours.forEach((hour) => {
   const option = document.createElement('option')
   // Set the option's innerHTML to an hour
   option.innerHTML = hour
+  option.value = hour
   // Append option to the select element
   select.appendChild(option)
 })
+
