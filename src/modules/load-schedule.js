@@ -20,6 +20,7 @@ search_date.addEventListener('change', () => {
     appointments.forEach((appointment) => {
       // Create the li element
       const li = document.createElement('li')
+      // Set the variables for the li content
       li.innerHTML = `
         <label for="" class="label-medium scheduled-time">${appointment.appointment_hour}</label>
         <label for="" class="label-medium">${appointment.pet_name} &nbsp</label>
@@ -27,6 +28,7 @@ search_date.addEventListener('change', () => {
         <p class="paragraph-medium service-description">${appointment.service}</p>
         <a href="" class="paragraph-small btn-remove">Remover agendamento</a>
       `
+      // Append to the according ul by time period
       if (appointment.appointment_hour.split(":")[0] <= 12) {
         morning_list.appendChild(li)
       } else if (appointment.appointment_hour.split(":")[0] > 18) {
