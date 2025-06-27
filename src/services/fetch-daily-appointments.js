@@ -13,28 +13,9 @@ export async function fetchDailyAppointments() {
     // Convert the data from the request
     const data = await response.json()
     
-    //Filter the day schedule by the selected date
-    // const selected_date_schedule = data.filter((appointment) => {
-    //   dayjs(date).isSame(appointment.appointment_date)
-    // })
+    // Filter only the appointments within the selected date
+    const result = data.filter((appointment) => appointment.appointment_date === date)
 
-    // console.log(selected_date_schedule);
-    
-    // return selected_date_schedule
-
-    // data.forEach(element => {
-    //   console.log(element.appointment_date);
-    // });
-
-    let result = []
-
-    data.forEach(element => {
-      if (element.appointment_date === date) {
-        result.push(element)
-      }
-    });
-
-    // console.log(result);
     return result
 
   } catch (error) {
