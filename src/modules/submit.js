@@ -45,7 +45,7 @@ form.addEventListener('submit', (event) => {
       alert('Por favor, insira o nome do tutor')
     }
 
-    const id = new Date().getTime()
+    const id = JSON.stringify(new Date().getTime())
 
     newAppointment({
       id, 
