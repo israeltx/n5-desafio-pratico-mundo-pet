@@ -1,12 +1,6 @@
-import dayjs from "dayjs";
 import { api_config } from "./api-config.js";
 
-// Get the search date input
-const search_date = document.getElementById('search-date')
-const date = search_date.value
-// console.log(date);
-
-export async function fetchDailyAppointments() {
+export async function fetchDailyAppointments(date) {
   try {
     // Request the data from the API
     const response = await fetch(`${api_config.baseURL}/schedules`)
