@@ -8,42 +8,6 @@
       "service": "Banho",
       "appointment_date": "2025-06-27",
       "appointment_hour": "15:00"
-    },
-    {
-      "id": 1751035794432,
-      "name": "Israel",
-      "pet_name": "Tuti",
-      "phone": "14 981212357",
-      "service": "Tosa",
-      "appointment_date": "2025-06-27",
-      "appointment_hour": "11:00"
-    },
-    {
-      "id": 1751035820020,
-      "name": "Israel",
-      "pet_name": "Tuti",
-      "phone": "14 981212357",
-      "service": "Tosa",
-      "appointment_date": "2025-06-28",
-      "appointment_hour": "20:00"
-    },
-    {
-      "id": 1751035857529,
-      "name": "Israel",
-      "pet_name": "Tuti",
-      "phone": "14 981212357",
-      "service": "Banho",
-      "appointment_date": "2025-06-28",
-      "appointment_hour": "19:00"
-    },
-    {
-      "id": 1751035969163,
-      "name": "Israel",
-      "pet_name": "Tuti",
-      "phone": "14 981212357",
-      "service": "Banho",
-      "appointment_date": "2025-06-28",
-      "appointment_hour": "09:00"
     }
   ]
 }

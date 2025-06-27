@@ -56,10 +56,17 @@ form.addEventListener('submit', (event) => {
       appointment_date, 
       appointment_hour
     })
-    
+
+    // Reset inputs after addition
+    tutors_name.value = ''
+    pets_name.value = ''
+    phone_number.value = ''
+    service_description.value = ''
+    date.value = ''
+    hours.value = ''
+
   } catch (error) {
     alert('Não foi possível realizar o agendamento')
     console.log(error);
   }
 })
-// console.log(name, pets_name.value, phone_number.value, service_description.value, date.value, selected_hour);

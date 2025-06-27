@@ -20,13 +20,15 @@ search_date.addEventListener('change', () => {
     appointments.forEach((appointment) => {
       // Create the li element
       const li = document.createElement('li')
+      // Give each li an id
+      li.setAttribute('data-id', appointment.id)
       // Set the variables for the li content
       li.innerHTML = `
         <label for="" class="label-medium scheduled-time">${appointment.appointment_hour}</label>
         <label for="" class="label-medium">${appointment.pet_name} &nbsp</label>
         <p class="paragraph-medium pet-owner-name"> / ${appointment.name}</p>
         <p class="paragraph-medium service-description">${appointment.service}</p>
-        <a href="" class="paragraph-small btn-remove">Remover agendamento</a>
+        <a href="#" class="paragraph-small btn-remove">Remover agendamento</a>
       `
       // Append to the according ul by time period
       if (appointment.appointment_hour.split(":")[0] <= 12) {
